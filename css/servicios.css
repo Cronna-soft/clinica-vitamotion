@@ -1,0 +1,87 @@
+/*ESTILOS DE LA PAGINA DE "SERVICIOS" (SERVICIOS.HTML)*/
+
+hr:last-child {
+	display: none;
+}
+
+/*SECCION HERO*/
+.hero-servicios {
+	background-image: url("../assets/img/banner.png"); /*IMAGEN DE FONDO*/
+	align-items: center !important;
+	justify-content: center !important;
+	padding-bottom: 0 !important;
+	text-align: center !important;
+}
+
+/*SECCION SERVICIOS*/
+section #servicios {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.servicios-container {
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+	margin: 0 auto;	
+	padding: 20px;
+	width: auto;
+}
+
+.servicio-item {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.servicio-datos {
+	max-width: 500px;
+	text-align: center;
+
+	& h3 {
+		font-size: 2rem;
+	}
+
+	& p {
+		font-size: 1.15rem;
+	}
+}
+
+.servicio-imagen {
+	display: none;
+	width: auto;
+	max-width: 280px;
+	height: auto;
+	border-radius: 25% 15px 25% 15px !important;
+
+	& img {
+		width: 100%;
+		height: 100%;
+		border-radius: 25% 15px 25% 15px !important;
+		object-fit: cover;
+	}
+}
+
+/*Diseño responsivo*/
+
+/*md (768px) Tablets*/
+@media (width >= 48rem) { 
+
+	.servicio-datos {
+		text-align: left;
+	}
+
+	.servicio-imagen {
+		display: block;
+	}
+
+}
+
+/*lg (1024px) Laptops*/
+@media (width >= 64rem) { ... }
+
+/*xl (1280px) Desktop*/
+@media (width >= 80rem) { ... }
+
+/*2xl (1536px) Desktop grandes*/
+@media (width >= 96rem) { ... }

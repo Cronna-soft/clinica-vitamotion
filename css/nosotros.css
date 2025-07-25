@@ -1,0 +1,318 @@
+/*ESTILOS PAGINA "SOBRE NOSOTROS" (NOSOTROS.HTML)*/
+
+/*Diseño Mobile-first*/
+
+/*SECCION HERO*/
+.hero-nosotros {
+	background-image: url("../assets/img/banner.png"); /*IMAGEN DE FONDO*/
+}
+
+.hero-item q {
+	color: white;
+
+	& span {
+		color: white;
+		font-style: italic;
+		font-weight: lighter;
+	}
+}
+
+.cta-hero-nosotros {
+	font-size: 2.2rem;
+	color: white;
+	transition: all 0.6s ease;
+	cursor: pointer;
+
+	&:hover {
+		color: var(--primary-color);
+		font-size: 2.5rem;
+	}
+}
+
+/*SECCION VALORES*/
+.valores-container {
+	gap: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.valores-item {
+	padding: 30px;
+	width: 400px;
+	height: 240px;
+	background-color: var(--secundary-color);
+	border-radius: 5px;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+	transition: all .7s ease;
+
+	& i, & h4, & p {
+		color: white;
+	}
+
+	& i {
+		font-size: 3rem;
+	}
+
+	& h4 {
+		text-transform: uppercase;
+		font-size: 1.5rem;
+	}
+
+	& p {
+		font-size: 1.2rem;
+	}
+
+	&:hover {
+		transform: scale(1.1);
+		background-color: white;
+		border: 1px solid var(--secundary-color);
+		cursor: crosshair;
+
+		& i {
+			color: var(--secundary-color);
+		}
+
+		& h4 {
+			color: var(--primary-color);
+		}
+
+		& p {
+			color: #333;
+		}
+	}
+}
+
+/*SECCION HISTORIA*/
+.historia {
+	width: 100%;	
+	position: relative;
+	z-index: 0;
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: 20%; /* altura media */
+		left: 0;
+		width: 100%;
+		height: 60%; /* grosor de la línea */
+		background: linear-gradient(to right, 
+			var(--secundary-color), 
+			var(--accent-color),
+			var(--primary-color)); /* color de la línea */
+		z-index: -1; /* detrás del contenido */
+	}
+}
+
+.historia-container {
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+
+.historia-item {
+
+	border-radius: 20px;
+	box-shadow: 0 20px 15px rgba(8, 185, 181, .15);
+}
+
+.historia-item div {
+	width: auto;
+	max-width: 550px;
+	padding: 20px 30px;
+	background-color: #fff;
+	text-align: justify;
+	border-radius: 20px;
+
+	& blockquote {
+		margin-bottom: 25px;
+		font-style: italic;
+		font-weight: 700;
+		text-align: center;
+	}
+
+	& p {
+		font-size: 1.1rem;	
+	}
+}
+
+.historia-item-imagen {
+	display: none;
+}
+
+/*SECCION TERAPEUTAS*/
+.terapeuta-container {
+	padding-top: 50px;	
+	padding-bottom: 50px;	
+	background-image: url('../assets/img/banner.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.terapeuta-container .carousel {
+	display: flex;	
+	justify-content: center;	
+}
+
+.terapeuta-item {
+	display: flex !important;	
+	flex-direction: column;	
+	justify-content: center;	
+	align-items: center;	
+	text-align: center;	
+	gap: 50px;	
+}
+
+.terapeuta-datos {
+	& p {
+		padding-left: 30px;	
+		padding-right: 30px;
+		font-size: 2.25rem;
+		color: white;
+	}
+
+	& ul {
+		display: flex;
+		align-items: center;	
+		justify-content: end;	
+		padding: 0;	
+		padding-left: 20px;
+		margin: 0;
+		font-size: 2rem;
+
+		& li i {
+			padding: 10px 15px;
+			color: white;
+			transition: all .1s ease;
+
+			&:hover {
+				font-size: 2.2rem;	
+				text-shadow: 0 1px 15px var(--primary-color);
+				border-radius: 50%;
+			}
+		}
+	}
+}
+
+.terapeuta-imagen {
+
+	& h6 {
+		margin: 0;	
+		padding-top: 35px;	
+		padding-bottom: 35px;	
+		width: 100%;
+		background-color: var(--secundary-color);
+		font-size: 1.4rem;	
+		color: white;
+	}
+
+	& img {
+		width: auto;
+		height: 420px;	
+		object-fit: cover;
+		object-position: center;
+	}
+}
+
+/*SECCION PROYECCION: MISION & VISION*/
+.nosotros-proyeccion-container {
+	padding: 20px;
+}
+
+.proyeccion-item {
+	width: auto;
+	max-width: 450px;
+
+	& p {
+		font-size: 1.2rem;
+		font-weight: 500;
+		text-align: justify;
+	}
+}
+
+/*Diseño responsivo*/
+
+/*md (768px) Tablets*/
+@media (width >= 48rem) { 
+
+	.nosotros-proyeccion-container {
+		display: flex;
+		justify-content: center;
+		align-items: stretch;
+		gap: 50px;
+	}
+
+	.terapeuta-imagen {
+		display: flex;
+		background-color: var(--secundary-color);
+
+		& h6 {
+			margin: auto 0;
+			padding-left: 25px;	
+			padding-right: 25px;
+		}
+	}
+
+}
+
+/*lg (1024px) Laptops*/
+@media (width >= 64rem) { 
+	.hero-nosotros {
+		align-items: center !important;
+		justify-content: center !important;
+		padding-bottom: 0 !important;
+		text-align: center !important;
+	}
+
+	.historia-container {
+		display: flex;
+		justify-content: space-center;
+		align-items: center;
+		gap: 20px;	
+	}
+
+	.historia-item-imagen {
+		display: block;	
+		width: 250px;
+		height: 420px;	
+		object-fit: cover;
+		border-radius: 10px;
+	}
+
+	.terapeuta-item {
+		display: flex;	
+		flex-direction: row;
+		align-items: start;
+		text-align: left;
+	}
+
+	.valores-item {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		gap: 10px;
+
+		& div {
+			max-width: 260px;
+		}
+	}
+}
+
+/*xl (1280px) Desktop*/
+@media (width >= 80rem) { 
+	.hero-nosotros .hero-container h1 {
+		font-size: 3rem;
+	}
+
+	.historia-container {
+		gap: 50px;	
+	}
+
+	.historia-item-imagen {
+		width: 270px;
+		height: 450px;	
+		border-radius: 15px;
+	}
+
+}

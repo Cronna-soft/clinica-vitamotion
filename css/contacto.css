@@ -1,0 +1,65 @@
+/*ESTILOS DE LA PÁGINA DE CONTACTO (CONTACTO.HTML)*/
+
+/*Diseño Mobile-first*/
+.hero-contacto {
+	background-image: url('../assets/img/banner.png');
+}
+
+.contacto-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 50px 10px;
+}
+
+.contacto {
+	padding: 15px 30px;
+	width: auto;
+	max-width: 405px;
+	background-color: white;
+	border-radius: 20px;
+	box-shadow: 0 3px 7px rgba(0, 0, 0, .3);
+
+	& p {
+		margin: 20px auto;
+		font-size: 1.15rem;
+		font-weight: 200;
+		font-style: italic;
+	}
+}
+
+.formulario {
+	padding: 20px;
+}
+
+.btn-contacto {
+	width: 100%;
+	padding: 7px;
+	text-align: center;
+	font-weight: bolder;
+	background-color: var(--accent-color);
+	border-color: var(--accent-color);
+	border-radius: 10px;
+	transition: all 0.65s ease;
+
+	&:hover {
+		transform: scale(1.1);
+		background-color: var(--secundary-color);
+		border-color: var(--secundary-color);
+		color: white;
+	}
+}
+
+/*Diseño responsivo*/
+
+/*lg (1024px) Laptops*/
+@media (width >= 64rem) { 
+
+	.hero-contacto {
+		height: 35vh !important	;
+		align-items: center !important;
+		justify-content: center !important;
+		padding-bottom: 0 !important;
+		text-align: left !important;
+	}
+}
