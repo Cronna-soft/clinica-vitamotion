@@ -16,7 +16,6 @@ El sitio está construido con:
 - **CSS3 + Bootstrap** para estilización personalizada  
 - **JavaScript** para mejorar la interactividad  
 - **Media Queries** para adaptabilidad en múltiples dispositivos
-- **[FormSubmit](https://formsubmit.co/documentation)** formulario interactivo
 
 La estética busca transmitir confianza, salud y profesionalismo, adaptándose al contexto médico con una navegación intuitiva.
 
@@ -29,6 +28,7 @@ La estética busca transmitir confianza, salud y profesionalismo, adaptándose a
 - **[Bootstrap Icon](https://icons.getbootstrap.com/)**
 - **JavaScript**  
 - **Media Queries para diseño responsivo**
+- **[FormSubmit](https://formsubmit.co/documentation)** formulario interactivo
 
 ---
 
